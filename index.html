@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-light bg-light px-4 border-bottom">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <i class="fab fa-instagram fa-lg me-2"></i>
+          <strong>Instagram</strong>
+        </a>
+        <div class="d-flex align-items-center gap-2">
+          <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#createPostModal">
+            Create a new post
+          </button>
+          <!-- Dropdown -->
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-cog"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Log out</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+          <!-- Nav Pills para cambiar entre vistas -->
+    <div class="container my-3 d-flex justify-content-center">
+      <ul class="nav nav-pills" id="viewTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="grid-tab" data-bs-toggle="pill" data-bs-target="#grid" type="button" role="tab" aria-controls="grid" aria-selected="true">
+            <i class="fas fa-th"></i>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="post-tab" data-bs-toggle="pill" data-bs-target="#post" type="button" role="tab" aria-controls="post" aria-selected="false">
+            <i class="fas fa-square"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Contenido de las vistas -->
+    <div class="tab-content container" id="viewTabContent">
+      <!-- Grid View -->
+      <div class="tab-pane fade show active" id="grid" role="tabpanel" aria-labelledby="grid-tab">
+        <div class="row row-cols-3 g-1 p-1">
+          <div class="col">
+            <img src="https://placedog.net/300/300?id=1" class="img-fluid w-100" alt="Post 1">
+          </div>
+          <div class="col">
+            <img src="https://placedog.net/300/300?id=1" class="img-fluid w-100" alt="Post 1">
+          </div>
+          <div class="col">
+            <img src="https://placedog.net/300/300?id=1" class="img-fluid w-100" alt="Post 1">
+          </div>
+          <div class="col">
+            <img src="https://placedog.net/300/300?id=1" class="img-fluid w-100" alt="Post 1">
+          </div>
+          <div class="col">
+            <img src="https://placedog.net/300/300?id=1" class="img-fluid w-100" alt="Post 1">
+          </div>
+          <div class="col">
+            <img src="https://placedog.net/300/300?id=1" class="img-fluid w-100" alt="Post 1">
+          </div>
+          <div class="col">
+            <img src="https://placedog.net/300/300?id=1" class="img-fluid w-100" alt="Post 1">
+          </div>
+          <div class="col">
+            <img src="https://placedog.net/300/300?id=1" class="img-fluid w-100" alt="Post 1">
+          </div>
+          <div class="col">
+            <img src="https://placedog.net/300/300?id=1" class="img-fluid w-100" alt="Post 1">
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- Post View -->
+      <div class="tab-pane fade" id="post" role="tabpanel" aria-labelledby="post-tab">
+        <div class="card mx-auto my-4" style="max-width: 600px;">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <span><strong>My Crazy Dog Spark!</strong></span>
+            <span class="text-muted">08/26</span>
+          </div>
+          <img src="https://placedog.net/600/400?id=1" class="card-img-top" alt="Post">
+          <div class="card-body">
+            <p class="card-text mb-1"><strong>204 Likes</strong></p>
+            <p class="card-text">This is an example of a very good photo that you can post on Instagram</p>
+          </div>
+        </div>
+        <div class="card mx-auto my-4" style="max-width: 600px;">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <span><strong>My Crazy Dog Spark!</strong></span>
+            <span class="text-muted">08/26</span>
+          </div>
+          <img src="https://placedog.net/600/400?id=1" class="card-img-top" alt="Post">
+          <div class="card-body">
+            <p class="card-text mb-1"><strong>204 Likes</strong></p>
+            <p class="card-text">This is an example of a very good photo that you can post on Instagram</p>
+          </div>
+        </div>
+        <div class="card mx-auto my-4" style="max-width: 600px;">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <span><strong>My Crazy Dog Spark!</strong></span>
+            <span class="text-muted">08/26</span>
+          </div>
+          <img src="https://placedog.net/600/400?id=1" class="card-img-top" alt="Post">
+          <div class="card-body">
+            <p class="card-text mb-1"><strong>204 Likes</strong></p>
+            <p class="card-text">This is an example of a very good photo that you can post on Instagram</p>
+          </div>
+        </div>
+        <div class="card mx-auto my-4" style="max-width: 600px;">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <span><strong>My Crazy Dog Spark!</strong></span>
+            <span class="text-muted">08/26</span>
+          </div>
+          <img src="https://placedog.net/600/400?id=1" class="card-img-top" alt="Post">
+          <div class="card-body">
+            <p class="card-text mb-1"><strong>204 Likes</strong></p>
+            <p class="card-text">This is an example of a very good photo that you can post on Instagram</p>
+          </div>
+        </div>
+        <div class="card mx-auto my-4" style="max-width: 600px;">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <span><strong>My Crazy Dog Spark!</strong></span>
+            <span class="text-muted">08/26</span>
+          </div>
+          <img src="https://placedog.net/600/400?id=1" class="card-img-top" alt="Post">
+          <div class="card-body">
+            <p class="card-text mb-1"><strong>204 Likes</strong></p>
+            <p class="card-text">This is an example of a very good photo that you can post on Instagram</p>
+          </div>
+        </div>
+        <div class="card mx-auto my-4" style="max-width: 600px;">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <span><strong>My Crazy Dog Spark!</strong></span>
+            <span class="text-muted">08/26</span>
+          </div>
+          <img src="https://placedog.net/600/400?id=1" class="card-img-top" alt="Post">
+          <div class="card-body">
+            <p class="card-text mb-1"><strong>204 Likes</strong></p>
+            <p class="card-text">This is an example of a very good photo that you can post on Instagram</p>
+          </div>
+        </div>
+        <div class="card mx-auto my-4" style="max-width: 600px;">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <span><strong>My Crazy Dog Spark!</strong></span>
+            <span class="text-muted">08/26</span>
+          </div>
+          <img src="https://placedog.net/600/400?id=1" class="card-img-top" alt="Post">
+          <div class="card-body">
+            <p class="card-text mb-1"><strong>204 Likes</strong></p>
+            <p class="card-text">This is an example of a very good photo that you can post on Instagram</p>
+          </div>
+        </div>
+        <div class="card mx-auto my-4" style="max-width: 600px;">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <span><strong>My Crazy Dog Spark!</strong></span>
+            <span class="text-muted">08/26</span>
+          </div>
+          <img src="https://placedog.net/600/400?id=1" class="card-img-top" alt="Post">
+          <div class="card-body">
+            <p class="card-text mb-1"><strong>204 Likes</strong></p>
+            <p class="card-text">This is an example of a very good photo that you can post on Instagram</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="createPostModal" tabindex="-1" aria-labelledby="createPostModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h5 class="modal-title" id="createPostModalLabel">Create a new post</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+    
+          <!-- Modal Body -->
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="captionTextarea" class="form-label">Caption:</label>
+                <textarea class="form-control" id="captionTextarea" rows="3" placeholder="Add the caption of your post here"></textarea>
+              </div>
+    
+              <div class="d-flex gap-2">
+                <button type="button" class="btn btn-outline-secondary">
+                  <i class="fa-solid fa-camera"></i>
+                </button>
+                <button type="button" class="btn btn-outline-secondary">
+                  <i class="fa-solid fa-location-dot"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+    
+          <!-- Modal Footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">Publish</button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    
+
+          
+          
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
+</html>

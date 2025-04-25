@@ -1,0 +1,16 @@
+.nav-pills .nav-link {
+    font-size: 1.4rem;
+    padding: 0.6rem 1.2rem;
+    margin: 0 5px;
+    border-radius: 0.5rem;
+    color: #333;
+  }
+  
+  .nav-pills .nav-link.active {
+    background-color: #0d6efd;
+    color: #fff;
+  }
+
+  .row > .col {
+    padding: 2px; /* o 0px para totalmente pegado */
+}
